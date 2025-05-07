@@ -1,6 +1,6 @@
-const cardsDataBase = [
+export const cardsDataBase = [
     {
-        image: "",
+        image: "../../assets/1.jpg",
         bigSale: true,
         original: false,
         title: "PROKHVOST Mushuklar uchun konserva, losos va alabalk ta'mi, 415 gr"

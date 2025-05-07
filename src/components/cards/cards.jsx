@@ -1,8 +1,11 @@
 import React from 'react'
+import cardsDataBase from './cardsData'
 
 const Cards = () => {
   return (
-    <div>Cards</div>
+    <div>
+      {cardsDataBase.image}
+    </div>
   )
 }
 
