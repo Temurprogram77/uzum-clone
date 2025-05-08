@@ -13,7 +13,7 @@ const cardsDataBase = [
   },
   {
     image: "3.jpg",
-    bigSale: true,
+    bigSale: false,
     original: true,
     title: "Бумага листовая Svetocopy ECO, А4ф, 80г/м2, 500 листов",
   },
@@ -25,45 +25,41 @@ const cardsDataBase = [
   },
   {
     image: "5.jpg",
-    bigSale: true,
+    bigSale: false,
     original: true,
     title:
       "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
   },
   {
     image: "6.jpg",
-    bigSale: true,
+    bigSale: false,
     original: true,
-    title:
-      "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
+    title:"Garnier Skin Naturals Nozik teri uchun misellar suvi, 125 ml",
   },
   {
     image: "7.jpg",
     bigSale: true,
     original: false,
-    title:
-      "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
+    title:"Teymurova Oyoq dezodoranti spreyi, hid va terga qarshi, salitsil kislotali, 150 ml"
   },
   {
     image: "8.jpg",
     bigSale: true,
     original: true,
-    title:
-      "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
+    title:"Qulay hazm qilish uchun sut aralashmasi Kabrita 2 Gold, 400 gr",
   },
   {
     image: "9.jpg",
-    bigSale: true,
+    bigSale: false,
     original: false,
-    title:
-      "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
+    title:"Ko'zoynak va gadjet ekranlari uchun Opticlean nam salfetkalari, 50 dona",
   },
   {
     image: "10.jpg",
-    bigSale: true,
+    bigSale: false,
     original: false,
     title:
-      "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
+      "Ayollar uchun dezodorant spreyi Nivea Pearl Beauty, marvarid ekstrakti bilan, 150 ml",
   },
 ];
 
