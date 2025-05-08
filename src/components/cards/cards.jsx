@@ -8,7 +8,7 @@ const Cards = () => {
     <div className="max-w-[1255px] mx-auto flex items-center justify-between flex-wrap">
       {cardsDataBase.map((element) => {
         return (
-          <div className="card-box w-[234px] h-[460px] rounded-2xl overflow-hidden">
+          <div className="card-box w-[234px] h-[460px] rounded-2xl overflow-hidden hover:shadow-[0 0 10px red] duration-300 cursor-pointer">
             <div className="image relative">
               <img
                 className="relative"
@@ -22,7 +22,7 @@ const Cards = () => {
                 <p className="absolute bottom-1 left-1 flex items-center gap-1 bg-white px-2 py-[2px] text-[10px] font-semibold rounded-2xl"><img className="w-[15px] h-[15px]" src={verified} alt="verified" /> Original</p>
               )}
             </div>
-            <p className="title">{element.title}</p>
+            <p className="text-[13px] font-semibold p-2">{(element.title).slice(0,60)}...</p>
           </div>
         );
       })}
