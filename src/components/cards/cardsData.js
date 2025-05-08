@@ -6,3 +6,5 @@ const cardsDataBase = [
         title: "PROKHVOST Mushuklar uchun konserva, losos va alabalk ta'mi, 415 gr"
     },
 ] 
+
+export default cardsDataBase;
