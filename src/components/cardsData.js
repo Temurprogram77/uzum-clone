@@ -1,6 +1,8 @@
+import { img1 } from "../assets/image";
+
 const cardsDataBase = [
   {
-    image: `1.jpg`,
+    image: img1,
     bigSale: true,
     original: false,
     title: "PROKHVOST Mushuklar uchun konserva, losos va alabalk ta'mi, 415 gr",
