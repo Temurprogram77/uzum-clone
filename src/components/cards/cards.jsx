@@ -39,10 +39,10 @@ const Cards = () => {
                 alt={element.title}
               />
               {element.bigSale && (
-                <p className="absolute bottom-0 bg-[#FFFF00]">Katta Savdo</p>
+                <p className="absolute bottom-1 bg-[#FFFF00] left-1 flex items-center gap-1 px-2 py-[2px] text-[10px] font-semibold rounded-2xl">Katta Savdo</p>
               )}
               {element.original && (
-                <p className="absolute bottom-0 flex "><img className="w-[20px] h-[20px]" src={verified} alt="verified" /> Original</p>
+                <p className="absolute bottom-1 left-1 flex items-center gap-1 bg-white px-2 py-[2px] text-[10px] font-semibold rounded-2xl"><img className="w-[15px] h-[15px]" src={verified} alt="verified" /> Original</p>
               )}
             </div>
             <p className="title">{element.title}</p>
