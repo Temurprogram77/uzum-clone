@@ -1,4 +1,4 @@
-export const cardsDataBase = [
+const cardsDataBase = [
     {
         image: "../../assets/1.jpg",
         bigSale: true,
