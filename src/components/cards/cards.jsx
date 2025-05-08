@@ -1,21 +1,7 @@
 import React from "react";
 import cardsDataBase from "../cardsData";
 
-
-
-
-const images = {
-  "1.jpg": img1,
-  "2.jpg": img2,
-  "3.jpg": img3,
-  "4.jpg": img4,
-  "5.jpg": img5,
-  "6.jpg": img6,
-  "7.jpg": img7,
-  "8.jpg": img8,
-  "9.jpg": img9,
-  "10.jpg": img10,
-};
+import verified from "../../assets/verified.png";
 
 const Cards = () => {
   return (
@@ -26,7 +12,7 @@ const Cards = () => {
             <div className="image relative">
               <img
                 className="relative"
-                src={images[element.image]}
+                src={element.image}
                 alt={element.title}
               />
               {element.bigSale && (
