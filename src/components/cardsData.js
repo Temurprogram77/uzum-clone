@@ -30,6 +30,41 @@ const cardsDataBase = [
     title:
       "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
   },
+  {
+    image: "6.jpg",
+    bigSale: true,
+    original: true,
+    title:
+      "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
+  },
+  {
+    image: "7.jpg",
+    bigSale: true,
+    original: false,
+    title:
+      "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
+  },
+  {
+    image: "8.jpg",
+    bigSale: true,
+    original: true,
+    title:
+      "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
+  },
+  {
+    image: "9.jpg",
+    bigSale: true,
+    original: false,
+    title:
+      "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
+  },
+  {
+    image: "10.jpg",
+    bigSale: true,
+    original: false,
+    title:
+      "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
+  },
 ];
 
 export default cardsDataBase;

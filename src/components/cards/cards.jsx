@@ -6,6 +6,11 @@ import img2 from "../../assets/2.jpg";
 import img3 from "../../assets/3.jpg";
 import img4 from "../../assets/4.jpg";
 import img5 from "../../assets/5.jpg";
+import img6 from "../../assets/6.jpg";
+import img7 from "../../assets/7.jpg";
+import img8 from "../../assets/8.jpg";
+import img9 from "../../assets/9.jpg";
+import img10 from "../../assets/10.jpg";
 
 const images = {
   "1.jpg": img1,
@@ -13,11 +18,16 @@ const images = {
   "3.jpg": img3,
   "4.jpg": img4,
   "5.jpg": img5,
+  "6.jpg": img6,
+  "7.jpg": img7,
+  "8.jpg": img8,
+  "9.jpg": img9,
+  "10.jpg": img10,
 };
 
 const Cards = () => {
   return (
-    <div className="max-w-[1255px] mx-auto flex items-center justify-between">
+    <div className="max-w-[1255px] mx-auto flex items-center justify-between flex-wrap">
       {cardsDataBase.map((element) => {
         return (
           <div className="card-box w-[234px] h-[460px] rounded-2xl overflow-hidden">
