@@ -23,7 +23,7 @@ const Slider = () => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          className="object-cover absolute w-full h-full"
+          className="object-cover absolute w-full h-full cursor-pointer"
         />
       </AnimatePresence>
       <button
