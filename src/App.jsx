@@ -35,7 +35,7 @@ const App = () => {
             <Cards />
           </>
         ) : (
-          <h1 className="status-text">You are currently offline. <Wifi/> </h1>
+          <h1 className="status-text flex flex-col items-center">You are currently offline. <Wifi size={40}/> </h1>
         )}
       </div>
     </div>
