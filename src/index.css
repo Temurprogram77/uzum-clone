@@ -2,10 +2,16 @@
 * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.pages-text::after {
+.pages-text::before {
+  content: "";
   position: absolute;
-  width: 100%;
+  width: 0;
   height: 2px;
   background: #000;
   bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in;
+}
+.pages-text:hover::before {
+  width: 100%;
 }
