@@ -32,6 +32,7 @@ const App = () => {
             <Navbar />
             <Pages />
             <Slider />
+            <CardBox/>
             <Cards />
           </>
         ) : (

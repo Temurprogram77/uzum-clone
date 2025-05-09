@@ -1,4 +1,4 @@
-import {img11, img12, img13, img14} from "../../assets/cardBox"
+import {img11, img12, img13, img14} from "../assets/cardBoxBase"
 
 const dataCards = [
     {
@@ -7,15 +7,15 @@ const dataCards = [
     },
     {
         image: img12,
-        title: "Onalar va bolalar uchun"
+        title: "Arzon narxlar kafolati"
     },
     {
         image: img13,
-        title: "Onalar va bolalar uchun"
+        title: "Zamonaviy Bozor"
     },
     {
         image: img14,
-        title: "Onalar va bolalar uchun"
+        title: "Hafta tovarlari"
     },
 ]
 
