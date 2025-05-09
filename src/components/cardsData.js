@@ -12,6 +12,7 @@ import {
 
 const cardsDataBase = [
   {
+    id: 1,
     image: img1,
     bigSale: true,
     original: false,
@@ -22,6 +23,7 @@ const cardsDataBase = [
     title: "PROKHVOST Mushuklar uchun konserva, losos va alabalk ta'mi, 415 gr",
   },
   {
+    id: 2,
     image: img2,
     bigSale: true,
     original: false,
@@ -32,6 +34,7 @@ const cardsDataBase = [
     title: "Крем Floresan F-100 против загара отбеливающий SPF 35, 125 млr",
   },
   {
+    id: 3,
     image: img3,
     bigSale: false,
     original: true,
@@ -42,6 +45,7 @@ const cardsDataBase = [
     title: "Бумага листовая Svetocopy ECO, А4ф, 80г/м2, 500 листов",
   },
   {
+    id: 4,
     image: img4,
     bigSale: true,
     original: false,
@@ -52,6 +56,7 @@ const cardsDataBase = [
     title: "Qog'oz Snegurochka, ofis, A4, 500 varaq",
   },
   {
+    id: 5,
     image: img5,
     bigSale: false,
     original: true,
@@ -63,6 +68,7 @@ const cardsDataBase = [
       "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
   },
   {
+    id: 6,
     image: img5,
     bigSale: false,
     original: true,
@@ -73,6 +79,7 @@ const cardsDataBase = [
     title: "Garnier Skin Naturals Nozik teri uchun misellar suvi, 125 ml",
   },
   {
+    id: 7,
     image: img6,
     bigSale: true,
     original: false,
@@ -84,6 +91,7 @@ const cardsDataBase = [
       "Teymurova Oyoq dezodoranti spreyi, hid va terga qarshi, salitsil kislotali, 150 ml",
   },
   {
+    id: 8,
     image: img7,
     bigSale: true,
     original: true,
@@ -94,6 +102,7 @@ const cardsDataBase = [
     title: "Qulay hazm qilish uchun sut aralashmasi Kabrita 2 Gold, 400 gr",
   },
   {
+    id: 9,
     image: img8,
     bigSale: false,
     original: false,
@@ -105,6 +114,7 @@ const cardsDataBase = [
       "Ko'zoynak va gadjet ekranlari uchun Opticlean nam salfetkalari, 50 dona",
   },
   {
+    id: 10,
     image: img9,
     bigSale: false,
     original: false,

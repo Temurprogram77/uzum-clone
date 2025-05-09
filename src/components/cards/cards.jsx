@@ -8,7 +8,7 @@ const Cards = () => {
     <div className="max-w-[1255px] mx-auto flex items-center justify-between flex-wrap">
       {cardsDataBase.map((element) => {
         return (
-          <div className="card-box w-[234px] h-[460px] rounded-2xl overflow-hidden hover:shadow-[0 0 10px red] duration-300 cursor-pointer">
+          <div key={element.id} className="card-box w-[234px] h-[460px] rounded-2xl overflow-hidden hover:shadow-[0 0 10px red] duration-300 cursor-pointer">
             <div className="image relative">
               <img
                 className="relative"

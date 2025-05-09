@@ -6,12 +6,12 @@ import { images } from "../sliderData";
 const Slider = () => {
   const [index, setIndex] = useState(2);
 
-  const prevSlide = ()=>{
-    return setIndex((prev)=>(prev-1+images.length)%images.length)
-  }
-  const nextSlide = ()=>{
-    return setIndex((next)=>(next+1)%images.length)
-  }
+  const prevSlide = () => {
+    return setIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+  const nextSlide = () => {
+    return setIndex((next) => (next + 1) % images.length);
+  };
 
   return (
     <div className="max-w-[1255px] h-[420px] relative mx-auto rounded-3xl overflow-hidden">
@@ -26,10 +26,16 @@ const Slider = () => {
           className="object-cover absolute w-full h-full"
         />
       </AnimatePresence>
-      <button className="absolute top-1/2 left-4 cursor-pointer p-2 rounded-full bg-[#ffffff92]" onClick={prevSlide}>
+      <button
+        className="absolute top-1/2 left-4 cursor-pointer p-2 rounded-full bg-[#ffffff92]"
+        onClick={prevSlide}
+      >
         <FaChevronLeft />
       </button>
-      <button className="absolute top-1/2 right-4 cursor-pointer p-2 rounded-full bg-[#ffffff92]" onClick={nextSlide}>
+      <button
+        className="absolute top-1/2 right-4 cursor-pointer p-2 rounded-full bg-[#ffffff92]"
+        onClick={nextSlide}
+      >
         <FaChevronRight />
       </button>
     </div>
