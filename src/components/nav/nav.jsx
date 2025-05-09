@@ -4,7 +4,7 @@ import arrow from  "../../assets/arrow.svg"
 
 const Nav = () => {
   return (
-    <div className="w-full">
+    <div className="w-full bg-[#F0F2F5] flex items-center justify-baseline">
       <div className="max-w-[1255px] mx-auto">
         <div className="">
           <div className="">
