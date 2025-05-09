@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Wifi } from "lucide-react";
 import Navbar from "./components/navbar/navbar";
 import Header from "./components/header/header";
@@ -9,6 +9,7 @@ import CardBox from "./components/cardBox/cardBox";
 import Pages from "./components/pages/pages";
 
 const App = () => {
+  const headerRef = useRef(null);
   const [isOnline, setIsOnline] = useState(navigator.onLine);
 
   useEffect(() => {
@@ -26,21 +27,26 @@ const App = () => {
 
   useEffect(() => {
     const scrollHeader = () => {
-      const header = document.getElementById("arrow-btn");
       if (window.scrollY >= 50) {
-        header.classList.add("bottom-6");
+        headerRef.current?.classList.add("bottom-6");
       } else {
-        header.classList.remove("bottom-6");
+        headerRef.current?.classList.remove("bottom-6");
       }
     };
 
     window.addEventListener("scroll", scrollHeader);
 
-    // Cleanup function
     return () => {
       window.removeEventListener("scroll", scrollHeader);
     };
   }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // sekin harakatlanadi
+    });
+  };
 
   return (
     <div className="bg-white">
@@ -59,7 +65,10 @@ const App = () => {
             <Slider />
             <CardBox />
             <Cards />
-            <div className="arrow-btn p-3 duration-300 fixed -bottom-16 right-6 rounded-full bg-[#7F4DFF] cursor-pointer">
+            <div
+              ref={headerRef}
+              className="arrow-btn p-3 duration-300 fixed -bottom-16 right-6 rounded-full bg-[#7F4DFF] cursor-pointer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -72,7 +81,7 @@ const App = () => {
           </>
         ) : (
           <h1 className="status-text flex flex-col items-center">
-            You are currently offline. <Wifi size={40} />{" "}
+            You are currently offline. <Wifi size={40} />
           </h1>
         )}
       </div>
