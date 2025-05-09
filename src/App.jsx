@@ -12,9 +12,9 @@ const App = () => {
     <div className='bg-white'>
       <Nav/>
       <Navbar/>
+      <Pages/>
       <Slider/>
       <Cards/>
-      <Pages/>
     </div>
   )
 }
