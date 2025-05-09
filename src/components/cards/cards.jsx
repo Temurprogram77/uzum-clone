@@ -5,7 +5,7 @@ import verified from "../../assets/verified.png";
 
 const Cards = () => {
   return (
-    <div className="max-w-[1255px] mx-auto flex items-center justify-between flex-wrap">
+    <div className="max-w-[1255px] my-4 mx-auto flex items-center justify-between flex-wrap">
       {cardsDataBase.map((element) => {
         return (
           <div key={element.id} className="card-box w-[234px] h-[460px] rounded-2xl overflow-hidden hover:shadow-[0 0 10px red] duration-300 cursor-pointer">

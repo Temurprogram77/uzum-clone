@@ -16,15 +16,15 @@ const pagesData = [
 
 const Pages = () => {
   return (
-    <div className="max-w-[1255px] mx-auto py-4 text-[15px] font-medium cursor-pointer flex items-center justify-between">
-      <div className="flex items-center gap-1">
+    <div className="max-w-[1255px] mx-auto py-4 text-[15px] font-medium flex items-center justify-between">
+      <div className="flex items-center gap-1 cursor-pointer">
         <img className="w-[25px]" src={star} alt="star" />
         <p>Hafta tovarlari</p>
       </div>
       {pagesData.map((item) => {
-        return <p className="pages-text py-2 hover:">{item}</p>;
+        return <p className="pages-text my-2 cursor-pointer">{item}</p>;
       })}
-      <div className="flex items-center gap-1">
+      <div className="flex items-center gap-1 cursor-pointer">
         <p>Yana</p>
         <img src={arrow} alt="arrow" />
       </div>
