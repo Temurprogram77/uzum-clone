@@ -22,7 +22,7 @@ const Pages = () => {
         <p>Hafta tovarlari</p>
       </div>
       {pagesData.map((item) => {
-        return <p className="pages-text my-2 cursor-pointer">{item}</p>;
+        return <p className="pages-text my-2 cursor-pointer relative">{item}</p>;
       })}
       <div className="flex items-center gap-1 cursor-pointer">
         <p>Yana</p>
