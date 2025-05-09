@@ -7,7 +7,7 @@ const Navbar = () => {
       <a href="#">
         <img src={logo} className="w-[140px] h-[20px]" alt="logo" />
       </a>
-      <div className=""></div>
+      <div className="flex px-3 py-1 bg-[#E5E5FF] text-[#8D4DFF]">Katalog</div>
     </div>
   );
 };
