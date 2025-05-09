@@ -2,7 +2,9 @@ import React from 'react'
 
 const CardBox = () => {
   return (
-    <div></div>
+    <div className='max-w-[1255px] mx-auto'>
+        
+    </div>
   )
 }
 
