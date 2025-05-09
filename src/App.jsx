@@ -44,7 +44,6 @@ const App = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // sekin harakatlanadi
     });
   };
 
@@ -67,6 +66,7 @@ const App = () => {
             <Cards />
             <div
               ref={headerRef}
+              onClick={scrollToTop}
               className="arrow-btn p-3 duration-300 fixed -bottom-16 right-6 rounded-full bg-[#7F4DFF] cursor-pointer"
             >
               <svg
