@@ -1,4 +1,6 @@
 import React from "react";
+import location from  "../../assets/location.svg"
+import arrow from  "../../assets/arrow.svg"
 
 const Nav = () => {
   return (
@@ -6,9 +8,9 @@ const Nav = () => {
       <div className="max-w-[1255px] mx-auto">
         <div className="">
           <div className="">
-            <img src="../../assets/location.svg" alt="location" />
+            <img src={location} alt="location" />
             Toshkent
-            <img src="../../assets/arrow.svg" alt="arrow" />
+            <img src={arrow} alt="arrow" />
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ const Slider = () => {
     <div className="max-w-[1255px] h-[420px] relative mx-auto rounded-3xl overflow-hidden">
       <AnimatePresence>
         <motion.img
-          key={images}
+          key={images[index]}
           src={images[index]}
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
