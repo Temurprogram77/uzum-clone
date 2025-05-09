@@ -8,7 +8,7 @@ const Nav = () => {
           <div className="">
             <img src="../../assets/location.svg" alt="location" />
             Toshkent
-            
+            <img src="../../assets/arrow.svg" alt="arrow" />
           </div>
         </div>
       </div>
