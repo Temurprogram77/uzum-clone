@@ -16,7 +16,7 @@ const Cards = () => {
           >
             <div className="image relative">
               <img
-                className="relative"
+                className="relative image-card"
                 src={element.image}
                 alt={element.title}
               />
@@ -52,7 +52,7 @@ const Cards = () => {
               {element.advancePayment}
             </p>
             <p className="px-2">{element.money}</p>
-            <div className="absolute bottom-2 right-2 border-1 border-[#EAEAEB] hover:bg-[#DEE0E5] p-1 rounded-full">
+            <div className="absolute bottom-2 right-2 border-1 border-[#EAEAEB] hover:bg-[#DEE0E5] duration-150 p-1 rounded-full">
               <img src={basket} alt="basket" />
             </div>
           </div>
