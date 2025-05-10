@@ -1,14 +1,23 @@
-import React from 'react'
+import React from "react";
 
-import close from "../../assets/close.svg"
+import close from "../../assets/close.svg";
 
 const CityModal = () => {
   return (
-    <div>
-        <h2>Shaharni tanlang</h2>
-        <img src={close} alt="close" />
-    </div>
-  )
-}
+    <>
+      <div className="w-full h-full bg-[#0000003e] fixed"></div>
+      <div className="">
+        <div className="">
+          <h2>Shaharni tanlang</h2>
+          <img src={close} alt="close" />
+        </div>
+        <input type="text" />
+        <div className="">
+            
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default CityModal
+export default CityModal;
