@@ -3,6 +3,7 @@ import cardsDataBase from "../cardsData";
 
 import verified from "../../assets/verified.png";
 import starIcon from "../../assets/star-icon.svg";
+import basket from "../../assets/basket.svg";
 
 
 const Cards = () => {
@@ -11,7 +12,7 @@ const Cards = () => {
       {cardsDataBase.map((element) => {
         
         return (
-          <div key={element.id} className="card-box w-[234px] h-[460px] rounded-2xl overflow-hidden hover:shadow-[0 0 10px red] duration-300 cursor-pointer">
+          <div key={element.id} className="card-box w-[234px] h-[460px] rounded-2xl hover:shadow-sm overflow-hidden hover:shadow-[0 0 10px red] duration-300 cursor-pointer relative">
             <div className="image relative">
               <img
                 className="relative"
@@ -33,6 +34,9 @@ const Cards = () => {
               <p className="text-[12px] font-semibold  px-2 rounded-xl bg-[#FFFF00] w-fit">{element.monthlyPayment} so'm/oyiga</p>
               <p className="mt-3 text-[#FF4DB1] text-[12px] font-medium">{element.advancePayment}</p>
               <p className="">{element.money}</p>
+              <div className="absolute bottom-2 right-2 border-1 border-[#EAEAEB] hover:bg-[#DEE0E5] p-1 rounded-full">
+                <img src={basket} alt="basket" />
+              </div>
           </div>
         );
       })}
