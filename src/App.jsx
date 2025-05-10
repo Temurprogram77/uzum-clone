@@ -7,6 +7,7 @@ import Nav from "./components/nav/nav";
 import Slider from "./components/slider/slider";
 import CardBox from "./components/cardBox/cardBox";
 import Pages from "./components/pages/pages";
+import AllSeeButton from "./components/allSeeButton/allSeeButton";
 
 const App = () => {
   const headerRef = useRef(null);
@@ -64,6 +65,7 @@ const App = () => {
             <Slider />
             <CardBox />
             <Cards />
+            <AllSeeButton />
             <div
               ref={headerRef}
               onClick={scrollToTop}
