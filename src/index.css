@@ -17,7 +17,8 @@
 }
 .image-card {
   scale: 1;
+  transition: scale 0.5s;
 }
-.card-box:hover.image-card {
-  scale: 2;
+.card-box:hover .image-card {
+  scale: 1.02;
 }
