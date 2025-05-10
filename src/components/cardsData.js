@@ -20,6 +20,7 @@ const cardsDataBase = [
     comments: 30279,
     monthlyPayment: 5465,
     advancePayment: "Arzon narx kafolati",
+    money: 269000,
     title: "PROKHVOST Mushuklar uchun konserva, losos va alabalk ta'mi, 415 gr",
   },
   {
@@ -31,6 +32,7 @@ const cardsDataBase = [
     comments: 7290,
     monthlyPayment: 8960,
     advancePayment: "40 990",
+    money: 33000,
     title: "Крем Floresan F-100 против загара отбеливающий SPF 35, 125 млr",
   },
   {
@@ -39,9 +41,10 @@ const cardsDataBase = [
     bigSale: false,
     original: true,
     star: 4.8,
-    comments: 30279,
+    comments: 25000,
     monthlyPayment: 2430,
     advancePayment: "Arzon narx kafolati",
+    money: 269000,
     title: "Бумага листовая Svetocopy ECO, А4ф, 80г/м2, 500 листов",
   },
   {
@@ -50,9 +53,10 @@ const cardsDataBase = [
     bigSale: true,
     original: false,
     star: 4.9,
-    comments: 30279,
+    comments: 38400,
     monthlyPayment: 1200,
     advancePayment: "Arzon narx kafolati",
+    money: 269000,
     title: "Qog'oz Snegurochka, ofis, A4, 500 varaq",
   },
   {
@@ -64,6 +68,7 @@ const cardsDataBase = [
     comments: 2900,
     monthlyPayment: 1980,
     advancePayment: "Arzon narx kafolati",
+    money: 269000,
     title:
       "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
   },
@@ -76,6 +81,7 @@ const cardsDataBase = [
     comments: 168,
     monthlyPayment: 2305,
     advancePayment: "Arzon narx kafolati",
+    money: 269000,
     title: "Garnier Skin Naturals Nozik teri uchun misellar suvi, 125 ml",
   },
   {
@@ -87,6 +93,7 @@ const cardsDataBase = [
     comments: 967,
     monthlyPayment: 3780,
     advancePayment: "Arzon narx kafolati",
+    money: 24000,
     title:
       "Teymurova Oyoq dezodoranti spreyi, hid va terga qarshi, salitsil kislotali, 150 ml",
   },
@@ -99,6 +106,7 @@ const cardsDataBase = [
     comments: 4502,
     monthlyPayment: 657,
     advancePayment: "40 990",
+    money: 269000,
     title: "Qulay hazm qilish uchun sut aralashmasi Kabrita 2 Gold, 400 gr",
   },
   {
@@ -110,6 +118,7 @@ const cardsDataBase = [
     comments: 5493,
     monthlyPayment: 2143,
     advancePayment: "Arzon narx kafolati",
+    money: 2200500,
     title:
       "Ko'zoynak va gadjet ekranlari uchun Opticlean nam salfetkalari, 50 dona",
   },
@@ -122,6 +131,7 @@ const cardsDataBase = [
     comments: 1535,
     monthlyPayment: 1980,
     advancePayment: "40 990",
+    money: 50400,
     title:
       "Ayollar uchun dezodorant spreyi Nivea Pearl Beauty, marvarid ekstrakti bilan, 150 ml",
   },

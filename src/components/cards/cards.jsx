@@ -2,11 +2,14 @@ import React from "react";
 import cardsDataBase from "../cardsData";
 
 import verified from "../../assets/verified.png";
+import starIcon from "../../assets/star-icon.svg";
+
 
 const Cards = () => {
   return (
     <div className="max-w-[1255px] my-4 mx-auto flex items-center justify-between flex-wrap">
       {cardsDataBase.map((element) => {
+        
         return (
           <div key={element.id} className="card-box w-[234px] h-[460px] rounded-2xl overflow-hidden hover:shadow-[0 0 10px red] duration-300 cursor-pointer">
             <div className="image relative">
@@ -23,6 +26,13 @@ const Cards = () => {
               )}
             </div>
             <p className="text-[13px] font-semibold p-2">{(element.title).slice(0,60)}...</p>
+            <div className="flex items-center gap-2">
+              <img src={starIcon} alt="star icon" />
+              <p className="text-[13px] font-semibold text-[#A0A2AA]">{element.star} ({element.comments} sharhlar)</p>
+            </div>
+              <p className="text-[12px] font-semibold  px-2 rounded-xl bg-[#FFFF00] w-fit">{element.monthlyPayment} so'm/oyiga</p>
+              <p className="mt-3 text-[#FF4DB1] text-[12px] font-medium">{element.advancePayment}</p>
+              <p className="">{element.money}</p>
           </div>
         );
       })}
