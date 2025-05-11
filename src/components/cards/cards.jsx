@@ -7,7 +7,7 @@ import basket from "../../assets/basket.svg";
 
 const Cards = () => {
   return (
-    <div className="max-w-[1255px] my-4 mx-auto flex items-center justify-between gap-2 flex-wrap">
+    <div className="max-w-[1255px] my-4 mx-auto flex items-center justify-between gap-5 flex-wrap">
       {cardsDataBase.map((element) => {
         return (
           <div
