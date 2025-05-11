@@ -3,7 +3,7 @@ import cooler from "../../assets/cooler.jpg";
 
 const Cooler = () => {
   return (
-    <div className='max-w-[1255px] mx-auto my-5 rounded-xl overflow-hidden'>
+    <div className='max-w-[1255px] mx-auto my-5 rounded-xl overflow-hidden md:block hidden'>
         <img className='bigImage duration-300 cursor-pointer' src={cooler} alt="cooler" />
     </div>
   )

@@ -83,7 +83,7 @@ const App = () => {
             <div
               ref={headerRef}
               onClick={scrollToTop}
-              className="arrow-btn p-3 duration-300 fixed -bottom-16 right-6 rounded-full bg-[#7F4DFF] cursor-pointer"
+              className="arrow-btn p-3 duration-300 fixed -bottom-16 right-6 rounded-full bg-[#7F4DFF] cursor-pointer md:block hidden"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

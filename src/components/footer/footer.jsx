@@ -10,13 +10,13 @@ const Footer = () => {
   return (
     <div>
       <div className="max-w-[1255px] mx-auto pt-5 mt-4">
-        <div className="flex justify-between pt-5 pb-16">
+        <div className="flex justify-between md:flex-row flex-col md:items-start items-center pt-5 pb-16">
           <div className="flex flex-col gap-2">
             <h5 className="text-[16px] font-semibold mb-2">Biz haqimizda</h5>
-            <a href="#" className="text-[#8b8e99] text-[14px] font-semibold">
+            <a href="#" className="text-[#8b8e99] text-[14px] font-semibold md:block hidden">
               Topshirish punktlari
             </a>
-            <a href="#" className="text-[#8b8e99] text-[14px] font-semibold">
+            <a href="#" className="text-[#8b8e99] text-[14px] font-semibold md:block hidden">
               Vakansiyalar
             </a>
           </div>
@@ -24,22 +24,22 @@ const Footer = () => {
             <h5 className="text-[16px] font-semibold mb-2">
               Foydalanuvchilarga
             </h5>
-            <a href="#" className="text-[#8b8e99] text-[14px] font-semibold">
+            <a href="#" className="text-[#8b8e99] text-[14px] font-semibold md:block hidden">
               Biz bilan bogʻlanish
             </a>
-            <a href="#" className="text-[#8b8e99] text-[14px] font-semibold">
+            <a href="#" className="text-[#8b8e99] text-[14px] font-semibold md:block hidden">
               Savol-Javob
             </a>
           </div>
           <div className="flex flex-col gap-2">
             <h5 className="text-[16px] font-semibold mb-2">Tadbirkorlarga</h5>
-            <a href="#" className="text-[#8b8e99] text-[14px] font-semibold">
+            <a href="#" className="text-[#8b8e99] text-[14px] font-semibold md:block hidden">
               Uzumda soting
             </a>
-            <a href="#" className="text-[#8b8e99] text-[14px] font-semibold">
+            <a href="#" className="text-[#8b8e99] text-[14px] font-semibold md:block hidden">
               Sotuvchi kabinetiga kirish
             </a>
-            <a href="#" className="text-[#8b8e99] text-[14px] font-semibold">
+            <a href="#" className="text-[#8b8e99] text-[14px] font-semibold md:block hidden">
               Topshirish punktini ochish
             </a>
           </div>
