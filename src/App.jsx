@@ -10,7 +10,7 @@ import Pages from "./components/pages/pages";
 import AllSeeButton from "./components/allSeeButton/allSeeButton";
 import Cooler from "./components/cooler/cooler";
 import Loading from "./components/loading/loading";
-import Footer from "./components/loading/footer";
+import Footer from "./components/footer/footer";
 
 const App = () => {
   const headerRef = useRef(null);
