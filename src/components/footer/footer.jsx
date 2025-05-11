@@ -9,8 +9,8 @@ import youtube from "../../assets/youtube.svg";
 const Footer = () => {
   return (
     <div>
-      <div className="max-w-[1255px] mx-auto pt-5 mt-4">
-        <div className="flex justify-between md:flex-row flex-col md:items-start items-center pt-5 pb-16">
+      <div className="max-w-[1255px] mx-auto pt-5 md:pb-0 pb-16 mt-4">
+        <div className="flex justify-between md:flex-row flex-col md:items-start items-center pt-5 md:pb-16 pb-6">
           <div className="flex flex-col gap-2">
             <h5 className="text-[16px] font-semibold mb-2">Biz haqimizda</h5>
             <a href="#" className="text-[#8b8e99] text-[14px] font-semibold md:block hidden">
@@ -62,16 +62,16 @@ const Footer = () => {
             </h5>
             <div className="flex gap-3">
               <a href="#">
-                <img src={instagram} alt="instagram" />
+                <img className="md:w-auto w-[40px]" src={instagram} alt="instagram" />
               </a>
               <a href="#">
-                <img src={telegram} alt="telegram" />
+                <img className="md:w-auto w-[40px]" src={telegram} alt="telegram" />
               </a>
               <a href="#">
-                <img src={facebook} alt="facebook" />
+                <img className="md:w-auto w-[40px]" src={facebook} alt="facebook" />
               </a>
               <a href="#">
-                <img src={youtube} alt="youtube" />
+                <img className="md:w-auto w-[40px]" src={youtube} alt="youtube" />
               </a>
             </div>
           </div>

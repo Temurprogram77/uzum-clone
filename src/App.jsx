@@ -13,6 +13,10 @@ import Loading from "./components/loading/loading";
 import Footer from "./components/footer/footer";
 
 import home from "./assets/home.svg"
+import catalog from "./assets/catalog.svg"
+import savat from "./assets/savat2.svg"
+import fast from "./assets/fast.png"
+import kabinet from "./assets/user2.svg"
 
 const App = () => {
   const headerRef = useRef(null);
@@ -97,23 +101,23 @@ const App = () => {
               </svg>
             </div>
             <div className="bg-white border-t md:hidden flex justify-between items-center w-full fixed bottom-0 py-2 px-3">
-              <div className="text-[12px] flex flex-col items-center">
+              <div className="text-[12px] w-full text-[#8B8E99] flex flex-col items-center">
                 <img src={home} alt="home" />
                 Bosh Sahifa
               </div>
-              <div className="text-[12px] flex flex-col items-center">
+              <div className="text-[12px] w-full text-[#8B8E99] flex flex-col items-center">
                 <img src={catalog} alt="catalog" />
                 Katalog
               </div>
-              <div className="text-[12px] flex flex-col items-center">
+              <div className="text-[12px] w-full text-[#8B8E99] flex flex-col items-center">
                 <img src={savat} alt="savat" />
                 Savat
               </div>
-              <div className="text-[12px] flex flex-col items-center">
-                <img src={fast} alt="fast" />
+              <div className="text-[12px] w-full text-[#8B8E99] flex flex-col items-center">
+                <img className="w-[30px]" src={fast} alt="fast" />
                 Tezkor
               </div>
-              <div className="text-[12px] flex flex-col items-center">
+              <div className="text-[12px] w-full text-[#8B8E99] flex flex-col items-center">
                 <img src={kabinet} alt="kabinet" />
                 Kabinet
               </div>
