@@ -1,12 +1,16 @@
 import React from "react";
 import appStore from "../../assets/appStore.svg";
 import playMarket from "../../assets/playMarket.svg";
+import instagram from "../../assets/instagram.svg";
+import telegram from "../../assets/telegram.svg";
+import facebook from "../../assets/facebook.svg";
+import youtube from "../../assets/youtube.svg";
 
 const Footer = () => {
   return (
     <div>
-      <div className="max-w-[1255px] mx-auto py-5">
-        <div className="flex justify-between">
+      <div className="max-w-[1255px] mx-auto pt-5 mt-4">
+        <div className="flex justify-between pt-5 pb-16">
           <div className="flex flex-col gap-2">
             <h5 className="text-[16px] font-semibold mb-2">Biz haqimizda</h5>
             <a href="#" className="text-[#8b8e99] text-[14px] font-semibold">
@@ -17,7 +21,9 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex flex-col gap-2">
-            <h5 className="text-[16px] font-semibold mb-2">Foydalanuvchilarga</h5>
+            <h5 className="text-[16px] font-semibold mb-2">
+              Foydalanuvchilarga
+            </h5>
             <a href="#" className="text-[#8b8e99] text-[14px] font-semibold">
               Biz bilan bogʻlanish
             </a>
@@ -38,7 +44,9 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex flex-col">
-            <h5 className="text-[16px] font-semibold mb-2">Ilovani yuklab olish</h5>
+            <h5 className="text-[16px] font-semibold mb-2">
+              Ilovani yuklab olish
+            </h5>
             <div className="flex gap-5">
               <a href="#" className="flex">
                 <img src={appStore} alt="apple" />
@@ -49,18 +57,35 @@ const Footer = () => {
                 <p>PlayMarket</p>
               </a>
             </div>
-            <h5>Uzum ijtimoiy tarmoqlarda</h5>
-            <div className="flex">
+            <h5 className="text-[16px] font-semibold mt-10 mb-2">
+              Uzum ijtimoiy tarmoqlarda
+            </h5>
+            <div className="flex gap-3">
               <a href="#">
                 <img src={instagram} alt="instagram" />
+              </a>
+              <a href="#">
                 <img src={telegram} alt="telegram" />
+              </a>
+              <a href="#">
                 <img src={facebook} alt="facebook" />
+              </a>
+              <a href="#">
                 <img src={youtube} alt="youtube" />
               </a>
             </div>
           </div>
         </div>
-        <div className=""></div>
+        <div className="flex justify-between items-center py-3 border-t border-[#D7D7D9]">
+          <div className="flex gap-3">
+            <h4 className="text-[15px] font-semibold"> Maxfiylik kelishuvi </h4>
+            <h4 className="text-[15px] font-semibold"> Foydalanuvchi kelishuvi </h4>
+          </div>
+          <p className="text-[#7e818c] text-[11px] font-semibold">
+            «2025© XK MCHJ «UZUM MARKET». STIR 309376127. Barcha huquqlar
+            himoyalangan»
+          </p>
+        </div>
       </div>
     </div>
   );
