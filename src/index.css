@@ -22,3 +22,6 @@
 .card-box:hover .image-card {
   scale: 1.02;
 }
+.bigImage:hover {
+  scale: 1.02;
+}
