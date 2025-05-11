@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import locations from "./cityBase";
 
 import close from "../../assets/close.svg";
@@ -6,6 +6,12 @@ import search from "../../assets/search.svg";
 import arrow from "../../assets/arrow-right.svg";
 
 const CityModal = ({ onClose }) => {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredData = locations.filter((item) =>
+    item.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <>
       <div
@@ -28,11 +34,13 @@ const CityModal = ({ onClose }) => {
             <input
               className="bg-transparent outline-none w-full font-medium"
               type="text"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Shaharni topish"
             />
           </div>
           <div className="w-full">
-            {locations.map((location) => {
+            {filteredData.map((location) => {
               return (
                 <div className="w-full flex items-center justify-between py-3 px-2 duration-200 cursor-pointer border-b border-[#D7D7D9] hover:bg-[#F5F5F5]">
                   <p>{location}</p>
