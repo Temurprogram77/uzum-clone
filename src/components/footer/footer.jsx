@@ -44,10 +44,10 @@ const Footer = () => {
             </a>
           </div>
           <div className="flex flex-col">
-            <h5 className="text-[16px] font-semibold mb-2">
+            <h5 className="text-[16px] md:text-start text-center font-semibold mb-2">
               Ilovani yuklab olish
             </h5>
-            <div className="flex gap-5">
+            <div className="flex md:flex-row flex-col md:items-start items-center gap-5">
               <a href="#" className="flex">
                 <img src={appStore} alt="apple" />
                 <p>AppStore</p>

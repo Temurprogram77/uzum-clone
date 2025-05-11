@@ -33,7 +33,7 @@ const Cards = () => {
               key={element.id}
               className="card-box md:w-[234px] w-[177px] md:h-[470px] h-[400px] rounded-2xl hover:shadow-md overflow-hidden hover:shadow-[0 0 10px red] duration-300 cursor-pointer relative"
             >
-              <div className="image relative h-[230px] overflow-hidden rounded-2xl">
+              <div className="image relative md:h-[310px] h-[230px] overflow-hidden rounded-2xl">
                 <img
                   className="relative image-card"
                   src={element.image}
