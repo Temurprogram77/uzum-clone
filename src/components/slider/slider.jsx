@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "motion/react";
 import { images } from "../data/sliderData";
+import { images2 } from "../data/sliderData";
 
 const Slider = () => {
   const [index, setIndex] = useState(2);
@@ -23,7 +24,16 @@ const Slider = () => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          className="object-cover absolute w-full h-full cursor-pointer"
+          className="object-cover absolute w-full h-full cursor-pointer md:block hidden"
+        />
+        <motion.img
+          key={images2[index]}
+          src={images2[index]}
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -100 }}
+          transition={{ duration: 0.5 }}
+          className="object-cover absolute w-full h-full cursor-pointer md:hidden block"
         />
       </AnimatePresence>
       <button
