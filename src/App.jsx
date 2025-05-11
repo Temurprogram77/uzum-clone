@@ -60,7 +60,12 @@ const App = () => {
   return (
     <div className="bg-white">
       {loading ? (
-        <Loading />
+        <>
+          <Nav />
+          <Navbar />
+          <Pages />
+          <Loading />
+        </>
       ) : isOnline ? (
         <>
           <Nav />
