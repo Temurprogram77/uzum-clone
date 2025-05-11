@@ -76,12 +76,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center py-3 border-t border-[#D7D7D9]">
-          <div className="flex gap-3">
+        <div className="flex md:flex-row flex-col justify-between items-center py-3 md:border-t border-none border-[#D7D7D9]">
+          <div className="flex md:flex-row flex-col md:items-start items-center gap-3">
             <h4 className="text-[15px] font-semibold"> Maxfiylik kelishuvi </h4>
             <h4 className="text-[15px] font-semibold"> Foydalanuvchi kelishuvi </h4>
           </div>
-          <p className="text-[#7e818c] text-[11px] font-semibold">
+          <p className="text-[#7e818c] text-[11px] text-center md:m-0 mt-4 font-semibold">
             «2025© XK MCHJ «UZUM MARKET». STIR 309376127. Barcha huquqlar
             himoyalangan»
           </p>
