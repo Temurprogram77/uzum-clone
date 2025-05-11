@@ -12,14 +12,18 @@ const Cards = () => {
       <h2 className="text-[30px] cursor-pointer items-end font-bold max-w-[1255px] mx-auto md:flex hidden">
         Mashhur <img src={arrow} alt="arrow" />
       </h2>
-      <div className="max-w-[1255px] my-4 mx-auto flex items-center justify-between gap-5 flex-wrap">
+      <div className="flex items-center justify-between mx-auto md:hidden">
+        <div className="">Sizga kerakli barchasi</div>
+        <div className="">Mashhur</div>
+      </div>
+      <div className="max-w-[1255px] my-4 flex items-center justify-between md:gap-5 gap-y-2 flex-wrap md:mx-auto mx-3">
         {cardsDataBase.map((element) => {
           return (
             <div
               key={element.id}
-              className="card-box md:w-[234px] w-[180px] md:h-[470px] h-[400px] rounded-2xl hover:shadow-md overflow-hidden hover:shadow-[0 0 10px red] duration-300 cursor-pointer relative"
+              className="card-box md:w-[234px] w-[177px] md:h-[470px] h-[400px] rounded-2xl hover:shadow-md overflow-hidden hover:shadow-[0 0 10px red] duration-300 cursor-pointer relative"
             >
-              <div className="image relative h-[240px] overflow-hidden rounded-2xl">
+              <div className="image relative h-[230px] overflow-hidden rounded-2xl">
                 <img
                   className="relative image-card"
                   src={element.image}
