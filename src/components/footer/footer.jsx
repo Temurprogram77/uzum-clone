@@ -2,7 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div>
+      <div className="max-w-[1255px] mx-auto"></div>
+    </div>
   )
 }
 

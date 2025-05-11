@@ -66,7 +66,7 @@ const App = () => {
           <Navbar />
           <Pages />
           <Loading />
-          <footer />
+          <Footer />
         </>
       ) : isOnline ? (
         <>
