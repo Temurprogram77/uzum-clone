@@ -8,7 +8,7 @@ import {
   img7,
   img8,
   img9,
-} from "../assets/image";
+} from "../../assets/image";
 
 const cardsDataBase = [
   {

@@ -1,4 +1,4 @@
-import {img11, img12, img13, img14} from "../assets/cardBoxBase"
+import {img11, img12, img13, img14} from "../../assets/cardBoxBase"
 
 const dataCards = [
     {

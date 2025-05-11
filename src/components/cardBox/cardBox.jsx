@@ -1,5 +1,5 @@
 import React from "react";
-import dataCards from "../cardBox";
+import dataCards from "../data/cardBox";
 
 const CardBox = () => {
   return (
