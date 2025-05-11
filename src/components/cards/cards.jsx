@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import cardsDataBase from "../data/cardsData";
 
 import verified from "../../assets/verified.png";
@@ -7,14 +7,24 @@ import basket from "../../assets/basket.svg";
 import arrow from "../../assets/arrow-right2.svg";
 
 const Cards = () => {
+
+  const [border, setBorder] = useState(true)
+
+  const OnClick = ()=>{
+    setBorder(true)
+  }
+  const OffClick = ()=>{
+    setBorder(false)
+  }
+
   return (
     <>
       <h2 className="text-[30px] cursor-pointer items-end font-bold max-w-[1255px] mx-auto md:flex hidden">
         Mashhur <img src={arrow} alt="arrow" />
       </h2>
-      <div className="flex items-center justify-between mx-auto my-3 px-3 md:hidden">
-        <div className="w-full text-center">Sizga kerakli barchasi</div>
-        <div className="w-full text-center">Mashhur</div>
+      <div className="flex items-center justify-between gap-4 mx-auto my-3 px-3 md:hidden">
+        <div onClick={OnClick} className={`w-full text-center ${border?"border-b-3":""} border-[#7F4DFF] pb-2 font-semibold`}>Sizga kerakli barchasi</div>
+        <div onClick={OffClick} className={`w-full text-center ${border?"":"border-b-3"} border-[#7F4DFF] pb-2 font-semibold`}>Mashhur</div>
       </div>
       <div className="max-w-[1255px] my-4 flex items-center justify-between md:gap-5 gap-y-2 flex-wrap md:mx-auto mx-3">
         {cardsDataBase.map((element) => {
