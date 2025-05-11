@@ -10,6 +10,7 @@ import Pages from "./components/pages/pages";
 import AllSeeButton from "./components/allSeeButton/allSeeButton";
 import Cooler from "./components/cooler/cooler";
 import Loading from "./components/loading/loading";
+import Footer from "./components/loading/footer";
 
 const App = () => {
   const headerRef = useRef(null);
@@ -65,6 +66,7 @@ const App = () => {
           <Navbar />
           <Pages />
           <Loading />
+          <footer />
         </>
       ) : isOnline ? (
         <>
@@ -76,6 +78,7 @@ const App = () => {
           <Cards />
           <AllSeeButton />
           <Cooler />
+          <Footer />
           <div
             ref={headerRef}
             onClick={scrollToTop}
