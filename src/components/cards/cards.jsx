@@ -12,9 +12,9 @@ const Cards = () => {
       <h2 className="text-[30px] cursor-pointer items-end font-bold max-w-[1255px] mx-auto md:flex hidden">
         Mashhur <img src={arrow} alt="arrow" />
       </h2>
-      <div className="flex items-center justify-between mx-auto md:hidden">
-        <div className="">Sizga kerakli barchasi</div>
-        <div className="">Mashhur</div>
+      <div className="flex items-center justify-between mx-auto my-3 px-3 md:hidden">
+        <div className="w-full text-center">Sizga kerakli barchasi</div>
+        <div className="w-full text-center">Mashhur</div>
       </div>
       <div className="max-w-[1255px] my-4 flex items-center justify-between md:gap-5 gap-y-2 flex-wrap md:mx-auto mx-3">
         {cardsDataBase.map((element) => {
