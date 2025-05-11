@@ -3,7 +3,7 @@ import dataCards from "../data/cardBox";
 
 const CardBox = () => {
   return (
-    <div className="max-w-[1255px] mx-auto flex justify-between items-center">
+    <div className="max-w-[1255px] mx-auto flex justify-between items-center md:block hidden">
       {dataCards.map((item) => {
         return (
           <div className="bg-[#EFEFEF] hover:bg-[#DEE0E5] duration-150 px-15 cursor-pointer my-4 rounded-xl py-4 flex items-center gap-2">

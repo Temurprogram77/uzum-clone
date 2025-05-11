@@ -9,7 +9,7 @@ import arrow from "../../assets/arrow-right2.svg";
 const Cards = () => {
   return (
     <>
-      <h2 className="text-[30px] cursor-pointer flex items-end font-bold max-w-[1255px] mx-auto">
+      <h2 className="text-[30px] cursor-pointer items-end font-bold max-w-[1255px] mx-auto md:flex hidden">
         Mashhur <img src={arrow} alt="arrow" />
       </h2>
       <div className="max-w-[1255px] my-4 mx-auto flex items-center justify-between gap-5 flex-wrap">
