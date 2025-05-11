@@ -8,6 +8,7 @@ import SmsCard from "../smsCard/smsCard";
 
 const Navbar = () => {
   const [modal, setModal] = useState(false);
+  const [searchModal, setSearchModal] = useState(false);
 
   const openModal = () => {
     return setModal(true);
@@ -16,6 +17,14 @@ const Navbar = () => {
   const closeModal = () => {
     return setModal(false);
   };
+
+  const openSearch = ()=>{
+    return setSearchModal(true)
+  }
+
+  const closeSearch = ()=>{
+    return setSearchModal(false)
+  }
   return (
     <>
       <div className="max-w-[1255px] mx-auto py-2 items-center justify-between md:flex hidden">
@@ -25,7 +34,7 @@ const Navbar = () => {
         <div className="flex px-7 py-2 bg-[#E5E5FF] text-[#8D4DFF] font-medium rounded-sm cursor-pointer">
           Katalog
         </div>
-        <div className="relative flex border-1 border-[#D7D7D9] rounded-sm">
+        <div onClick={openSearch} className="relative flex border-1 border-[#D7D7D9] rounded-sm">
           <input
             id="inp"
             className=" pl-5 w-[450px] outline-none"
@@ -53,6 +62,7 @@ const Navbar = () => {
         </div>
       </div>
       {modal && <SmsCard onClose={closeModal} />}
+      {searchModal && <SmsCard onClose={closeModal} />}
     </>
   );
 };
