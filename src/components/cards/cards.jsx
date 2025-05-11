@@ -17,9 +17,9 @@ const Cards = () => {
           return (
             <div
               key={element.id}
-              className="card-box w-[234px] h-[470px] rounded-2xl hover:shadow-md overflow-hidden hover:shadow-[0 0 10px red] duration-300 cursor-pointer relative"
+              className="card-box md:w-[234px] w-[180px] md:h-[470px] h-[400px] rounded-2xl hover:shadow-md overflow-hidden hover:shadow-[0 0 10px red] duration-300 cursor-pointer relative"
             >
-              <div className="image relative h-[310px] overflow-hidden rounded-2xl">
+              <div className="image relative h-[240px] overflow-hidden rounded-2xl">
                 <img
                   className="relative image-card"
                   src={element.image}
@@ -41,7 +41,7 @@ const Cards = () => {
                   </p>
                 )}
               </div>
-              <p className="text-[13px] font-semibold p-2">
+              <p className="text-[13px] font-semibold p-2 leading-3">
                 {element.title.slice(0, 60)}...
               </p>
               <div className="flex items-center gap-2 px-2">
