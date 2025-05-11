@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import location from "../../assets/location.svg";
 import arrow from "../../assets/arrow.svg";
 import uzb from "../../assets/uzb.png";
+import CityModal from "../cityModal/cityModal";
 
 const Nav = () => {
+  const [modal, setModal] = useState(false);
+
+  const openModal = ()=>{
+    return setModal(true)
+  }
+
+  const closeModal = ()=>{
+    return setModal(false)
+  }
+
   return (
     <div className="w-full bg-[#F0F2F5] py-1">
       <div className="max-w-[1255px] mx-auto flex items-center justify-between">
         <div className="flex items-center gap-6">
-          <div className="font-medium flex gap-1 cursor-pointer">
+          <div onClick={openModal} className="font-medium flex gap-1 cursor-pointer">
             <img src={location} alt="location" />
             Toshkent
             <img src={arrow} alt="arrow" />
