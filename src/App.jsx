@@ -8,6 +8,7 @@ import Slider from "./components/slider/slider";
 import CardBox from "./components/cardBox/cardBox";
 import Pages from "./components/pages/pages";
 import AllSeeButton from "./components/allSeeButton/allSeeButton";
+import Cooler from "./components/cooler/cooler";
 
 const App = () => {
   const headerRef = useRef(null);
@@ -66,6 +67,7 @@ const App = () => {
             <CardBox />
             <Cards />
             <AllSeeButton />
+            <Cooler />
             <div
               ref={headerRef}
               onClick={scrollToTop}

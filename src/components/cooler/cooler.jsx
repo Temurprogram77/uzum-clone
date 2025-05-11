@@ -1,9 +1,9 @@
 import React from 'react'
-import cooler from "../../assets/cooler.png";
+import cooler from "../../assets/cooler.jpg";
 
 const Cooler = () => {
   return (
-    <div className='max-w-[1255px] mx-auto'>
+    <div className='max-w-[1255px] mx-auto my-5 rounded-xl overflow-hidden'>
         <img src={cooler} alt="cooler" />
     </div>
   )
