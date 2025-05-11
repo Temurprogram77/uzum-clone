@@ -9,6 +9,7 @@ import CardBox from "./components/cardBox/cardBox";
 import Pages from "./components/pages/pages";
 import AllSeeButton from "./components/allSeeButton/allSeeButton";
 import Cooler from "./components/cooler/cooler";
+import Loading from "./components/loading/loading";
 
 const App = () => {
   const headerRef = useRef(null);
@@ -59,7 +60,7 @@ const App = () => {
   return (
     <div className="bg-white">
       {loading ? (
-        <></>
+        <Loading />
       ) : isOnline ? (
         <>
           <Nav />
