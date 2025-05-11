@@ -18,7 +18,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="max-w-[1255px] mx-auto py-2 flex items-center justify-between">
+      <div className="max-w-[1255px] mx-auto py-2 items-center justify-between md:flex hidden">
         <a href="#">
           <img src={logo} className="w-[200px] h-[30px]" alt="logo" />
         </a>

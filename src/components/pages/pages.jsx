@@ -16,7 +16,7 @@ const pagesData = [
 
 const Pages = () => {
   return (
-    <div className="max-w-[1255px] mx-auto pb-4 text-[15px] font-medium flex items-center justify-between">
+    <div className="max-w-[1255px] mx-auto pb-4 text-[15px] font-medium md:block hidden items-center justify-between">
       <div className="flex items-center gap-1 cursor-pointer">
         <img className="w-[25px]" src={star} alt="star" />
         <p>Hafta tovarlari</p>

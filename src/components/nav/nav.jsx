@@ -17,7 +17,7 @@ const Nav = () => {
 
   return (
     <>
-      <div className="w-full bg-[#F0F2F5] py-1">
+      <div className="w-full bg-[#F0F2F5] py-1 md:block hidden">
         <div className="max-w-[1255px] mx-auto flex items-center justify-between">
           <div className="flex items-center gap-6">
             <div

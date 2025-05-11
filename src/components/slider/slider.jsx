@@ -14,7 +14,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="max-w-[1255px] h-[420px] relative mx-auto rounded-3xl overflow-hidden">
+    <div className="md:max-w-[1255px] max-w-full md:h-[420px] h-[200px] relative md:mx-auto md:my-0 my-2 mx-[10px] md:rounded-3xl rounded-xl overflow-hidden">
       <AnimatePresence>
         <motion.img
           key={images[index]}
@@ -27,13 +27,13 @@ const Slider = () => {
         />
       </AnimatePresence>
       <button
-        className="absolute top-1/2 left-4 cursor-pointer p-2 rounded-full bg-[#ffffff92]"
+        className="absolute top-1/2 md:left-4 left-2 cursor-pointer p-2 rounded-full bg-[#ffffff92]"
         onClick={prevSlide}
       >
         <FaChevronLeft />
       </button>
       <button
-        className="absolute top-1/2 right-4 cursor-pointer p-2 rounded-full bg-[#ffffff92]"
+        className="absolute top-1/2 md:right-4 right-2 cursor-pointer p-2 rounded-full bg-[#ffffff92]"
         onClick={nextSlide}
       >
         <FaChevronRight />
