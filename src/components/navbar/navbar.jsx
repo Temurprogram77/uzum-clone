@@ -10,6 +10,7 @@ import SearchModal from "../searchModal/searchModal";
 const Navbar = () => {
   const [modal, setModal] = useState(false);
   const [searchModal, setSearchModal] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const openModal = () => {
     return setModal(true);
@@ -45,6 +46,8 @@ const Navbar = () => {
             id="inp"
             className=" pl-5 w-[450px] outline-none"
             type="text"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
             placeholder="Mahsulotlar va turkumlar izlash"
           />
           <label for="inp" className="cursor-pointer py-2 px-6 bg-[#EDEFF2]">
@@ -68,7 +71,7 @@ const Navbar = () => {
         </div>
       </div>
       {modal && <SmsCard onClose={closeModal} />}
-      {searchModal && <SearchModal onClose={closeSearch} />}
+      {searchModal && <SearchModal onClose={closeSearch} searchTerm={searchTerm} setSearchTerm={setSearchTerm} />}
     </>
   );
 };
