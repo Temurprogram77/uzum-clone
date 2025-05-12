@@ -5,6 +5,7 @@ import user from "../../assets/user.svg";
 import heart from "../../assets/heart.svg";
 import savat from "../../assets/savat.svg";
 import SmsCard from "../smsCard/smsCard";
+import SearchModal from "../searchModal/searchModal";
 
 const Navbar = () => {
   const [modal, setModal] = useState(false);
@@ -62,7 +63,7 @@ const Navbar = () => {
         </div>
       </div>
       {modal && <SmsCard onClose={closeModal} />}
-      {searchModal && <SmsCard onClose={closeModal} />}
+      {searchModal && <SearchModal onClose={closeModal} />}
     </>
   );
 };
