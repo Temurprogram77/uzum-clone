@@ -25,7 +25,7 @@ const Navbar = () => {
   };
 
   const closeSearch = () => {
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = '';
     return setSearchModal(false);
   };
   return (
