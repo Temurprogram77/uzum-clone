@@ -5,27 +5,27 @@ import verified from "../../assets/verified.png";
 import starIcon from "../../assets/star-icon.svg";
 import basket from "../../assets/basket.svg";
 
-const SearchModal = () => {
+const SearchModal = ({onClose}) => {
   return (
     <>
-      <div className="bg-[#000]"></div>
-      <div className="bg-[#abc] px-3 py-4">
-        <div className="">Tavsiya etamiz</div>
-        <div className="">
+      <div onClick={onClose} className="bg-[#0000007a] fixed left-0 w-full h-full z-10"></div>
+      <div className="bg-white px-3 pb-4 max-w-[520px] h-[600px] mx-auto fixed z-11 left-1/2 transform -translate-x-1/2 flex flex-wrap overflow-y-scroll">
+        <div className="text-[20px] font-semibold py-2 sticky w-full top-0 z-10 bg-[#ffffffdd]">Tavsiya etamiz</div>
+        <div className=" flex flex-wrap justify-between">
           {searchCardsDataBase.map((element) => {
             return (
               <div
                 key={element.id}
-                className="card-box md:w-[234px] w-[177px] md:h-[470px] h-[400px] rounded-2xl hover:shadow-md overflow-hidden hover:shadow-[0 0 10px red] duration-300 cursor-pointer relative"
+                className="card-box md:w-[150px] w-[177px] md:h-[350px] h-[400px] rounded-2xl hover:shadow-md overflow-hidden hover:shadow-[0 0 10px red] duration-300 cursor-pointer relative"
               >
-                <div className="image relative md:h-[310px] h-[230px] overflow-hidden rounded-2xl">
+                <div className="image relative md:h-[200px] h-[230px] overflow-hidden rounded-2xl">
                   <img
                     className="relative image-card"
                     src={element.image}
                     alt={element.title}
                   />
                   {element.bigSale && (
-                    <p className="absolute bottom-1 bg-[#FFFF00] left-1 flex items-center gap-1 px-2 py-[2px] text-[10px] font-semibold rounded-2xl">
+                    <p className="absolute bottom-1 bg-[#FFFF00] left-1 flex items-center gap-1 px-1 py-[1px] text-[9px] font-semibold rounded-2xl">
                       Katta Savdo
                     </p>
                   )}

@@ -122,19 +122,6 @@ import {
       title:
         "Ko'zoynak va gadjet ekranlari uchun Opticlean nam salfetkalari, 50 dona",
     },
-    {
-      id: 10,
-      image: img9,
-      bigSale: false,
-      original: false,
-      star: 4.9,
-      comments: 1535,
-      monthlyPayment: 1980,
-      advancePayment: "40 990",
-      money: 50400,
-      title:
-        "Ayollar uchun dezodorant spreyi Nivea Pearl Beauty, marvarid ekstrakti bilan, 150 ml",
-    },
   ];
   
   export default searchCardsDataBase;
