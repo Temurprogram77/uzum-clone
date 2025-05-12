@@ -10,7 +10,7 @@ import {
     img9,
   } from "../../assets/image";
   
-  const cardsDataBase = [
+  const searchCardsDataBase = [
     {
       id: 1,
       image: img1,
@@ -137,5 +137,5 @@ import {
     },
   ];
   
-  export default cardsDataBase;
+  export default searchCardsDataBase;
   
