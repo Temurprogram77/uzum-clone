@@ -1,5 +1,4 @@
 import { img11, img12, img13, img14 } from "../assets/cardBoxBase";
-
 import {
   img1,
   img2,
@@ -11,13 +10,18 @@ import {
   img8,
   img9,
 } from "../assets/image";
+import {
+  slider1,
+  slider2,
+  slider3,
+  slider4,
+  slider5,
+} from "../assets/slider";
 
-import { slider1, slider2, slider3, slider4, slider5 } from "../assets/slider";
+export const mainImages = [img1, img2, img3, img4, img5];
+export const sliderImages = [slider1, slider2, slider3, slider4, slider5];
 
-export const images = [img1, img2, img3, img4, img5];
-export const images2 = [slider1, slider2, slider3, slider4, slider5];
-
-export const searchCardsDataBase = [
+export const searchCards = [
   {
     id: 1,
     image: img1,
@@ -76,8 +80,7 @@ export const searchCardsDataBase = [
     monthlyPayment: 1980,
     advancePayment: "Arzon narx kafolati",
     money: 269000,
-    title:
-      "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
+    title: "Varaq qog'oz, ofis jihozlari uchun Sylvamo Svetocopy, A4f C07/3, 500 varaq",
   },
   {
     id: 6,
@@ -101,8 +104,7 @@ export const searchCardsDataBase = [
     monthlyPayment: 3780,
     advancePayment: "Arzon narx kafolati",
     money: 24000,
-    title:
-      "Teymurova Oyoq dezodoranti spreyi, hid va terga qarshi, salitsil kislotali, 150 ml",
+    title: "Teymurova Oyoq dezodoranti spreyi, hid va terga qarshi, salitsil kislotali, 150 ml",
   },
   {
     id: 8,
@@ -126,12 +128,11 @@ export const searchCardsDataBase = [
     monthlyPayment: 2143,
     advancePayment: "Arzon narx kafolati",
     money: 2200500,
-    title:
-      "Ko'zoynak va gadjet ekranlari uchun Opticlean nam salfetkalari, 50 dona",
+    title: "Ko'zoynak va gadjet ekranlari uchun Opticlean nam salfetkalari, 50 dona",
   },
 ];
 
-export const dataCards = [
+export const categoryCards = [
   {
     image: img11,
     title: "Onalar va bolalar uchun",
@@ -150,19 +151,15 @@ export const dataCards = [
   },
 ];
 
-export const cardsDataBase = [
-  ...searchCardsDataBase,
-  {
-    id: 10,
-    image: img9,
-    bigSale: false,
-    original: false,
-    star: 4.9,
-    comments: 1535,
-    monthlyPayment: 1980,
-    advancePayment: "40 990",
-    money: 50400,
-    title:
-      "Ayollar uchun dezodorant spreyi Nivea Pearl Beauty, marvarid ekstrakti bilan, 150 ml",
-  },
-];
+export const allCards = [...searchCards, {
+  id: 10,
+  image: img9,
+  bigSale: false,
+  original: false,
+  star: 4.9,
+  comments: 1535,
+  monthlyPayment: 1980,
+  advancePayment: "40 990",
+  money: 50400,
+  title: "Ayollar uchun dezodorant spreyi Nivea Pearl Beauty, marvarid ekstrakti bilan, 150 ml",
+}];

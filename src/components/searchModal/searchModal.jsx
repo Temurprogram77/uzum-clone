@@ -1,5 +1,5 @@
 import React from "react";
-import searchCardsDataBase from "../../data/data";
+import {searchCardsDataBase} from "../../data/data";
 
 import verified from "../../assets/verified.png";
 import starIcon from "../../assets/star-icon.svg";
