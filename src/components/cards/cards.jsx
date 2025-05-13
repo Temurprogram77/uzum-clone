@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import cardsDataBase from "../data/cardsData";
+import cardsDataBase from "../../data/data";
 
 import verified from "../../assets/verified.png";
 import starIcon from "../../assets/star-icon.svg";

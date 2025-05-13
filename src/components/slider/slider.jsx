@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { motion, AnimatePresence } from "motion/react";
-import { images } from "../data/sliderData";
-import { images2 } from "../data/sliderData";
+import { images } from "../../data/data";
+import { images2 } from "../../data/data";
 
 const Slider = () => {
   const [index, setIndex] = useState(2);
