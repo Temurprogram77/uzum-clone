@@ -1,4 +1,4 @@
-import { img11, img12, img13, img14 } from "../../assets/cardBoxBase";
+import { img11, img12, img13, img14 } from "../assets/cardBoxBase";
 
 import {
   img1,
@@ -10,7 +10,7 @@ import {
   img7,
   img8,
   img9,
-} from "../../assets/image";
+} from "../assets/image";
 
 import {
   img1,
@@ -22,16 +22,16 @@ import {
   img7,
   img8,
   img9,
-} from "../../assets/image";
+} from "../assets/image";
 
-import { img1, img2, img3, img4, img5 } from "../../assets/slider";
+import { img1, img2, img3, img4, img5 } from "../assets/slider";
 import {
   slider1,
   slider2,
   slider3,
   slider4,
   slider5,
-} from "../../assets/slider";
+} from "../assets/slider";
 export const images = [img1, img2, img3, img4, img5];
 export const images2 = [slider1, slider2, slider3, slider4, slider5];
 
