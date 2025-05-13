@@ -1,19 +1,19 @@
-import img1 from "./slider1.jpg";
-import img2 from "./slider2.jpg";
-import img3 from "./slider3.jpg";
-import img4 from "./slider4.jpg";
-import img5 from "./slider5.jpg";
+import image1 from "./slider1.jpg";
+import image2 from "./slider2.jpg";
+import image3 from "./slider3.jpg";
+import image4 from "./slider4.jpg";
+import image5 from "./slider5.jpg";
 import slider1 from "./slider1-media.jpg";
 import slider2 from "./slider2-media.jpg";
 import slider3 from "./slider3-media.jpg";
 import slider4 from "./slider4-media.jpg";
 import slider5 from "./slider5-media.jpg";
 export {
-    img1,
-    img2,
-    img3,
-    img4,
-    img5,
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
     slider1,
     slider2,
     slider3,
