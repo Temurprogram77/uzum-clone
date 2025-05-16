@@ -1,21 +1,30 @@
 import React, { useState } from "react";
-import {cardsDataBase} from "../../data/data";
+import { cardsDataBase } from "../../data/data";
 
 import verified from "../../assets/verified.png";
 import starIcon from "../../assets/star-icon.svg";
 import basket from "../../assets/basket.svg";
 import arrow from "../../assets/arrow-right2.svg";
+import heart from "../../assets/heart-svg.svg";
+import heartRed from "../../assets/heart-red.svg";
 
 const Cards = () => {
+  const [border, setBorder] = useState(true);
+  const [likesState, setLikesState] = useState({});
 
-  const [border, setBorder] = useState(true)
+  const OnClick = () => {
+    setBorder(true);
+  };
+  const OffClick = () => {
+    setBorder(false);
+  };
 
-  const OnClick = ()=>{
-    setBorder(true)
-  }
-  const OffClick = ()=>{
-    setBorder(false)
-  }
+  const toggleLike = (id) => {
+    setLikesState((prev) => {
+      const isLiked = prev[id];
+      return { ...prev, [id]: !isLiked };
+    });
+  };
 
   return (
     <>
@@ -23,11 +32,26 @@ const Cards = () => {
         Mashhur <img src={arrow} alt="arrow" />
       </h2>
       <div className="flex items-center justify-between gap-4 mx-auto my-3 px-3 md:hidden">
-        <div onClick={OnClick} className={`w-full text-center ${border?"border-b-3":""} border-[#7F4DFF] pb-2 font-semibold`}>Sizga kerakli barchasi</div>
-        <div onClick={OffClick} className={`w-full text-center ${border?"":"border-b-3"} border-[#7F4DFF] pb-2 font-semibold`}>Mashhur</div>
+        <div
+          onClick={OnClick}
+          className={`w-full text-center ${
+            border ? "border-b-3" : ""
+          } border-[#7F4DFF] pb-2 font-semibold`}
+        >
+          Sizga kerakli barchasi
+        </div>
+        <div
+          onClick={OffClick}
+          className={`w-full text-center ${
+            border ? "" : "border-b-3"
+          } border-[#7F4DFF] pb-2 font-semibold`}
+        >
+          Mashhur
+        </div>
       </div>
       <div className="max-w-[1255px] my-4 flex items-center justify-between md:gap-5 gap-y-2 flex-wrap md:mx-auto mx-3">
         {cardsDataBase.map((element) => {
+          const isLiked = likesState[element.id] || false;
           return (
             <div
               key={element.id}
@@ -39,6 +63,12 @@ const Cards = () => {
                   src={element.image}
                   alt={element.title}
                 />
+                <div
+                  className="like absolute top-2 right-2 cursor-pointer w-fit h-fit"
+                  onClick={() => toggleLike(element.id)}
+                >
+                  <img src={isLiked ? heartRed : heart} alt="like" />
+                </div>
                 {element.bigSale && (
                   <p className="absolute bottom-1 bg-[#FFFF00] left-1 flex items-center gap-1 px-2 py-[2px] text-[10px] font-semibold rounded-2xl">
                     Katta Savdo
