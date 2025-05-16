@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Wifi } from "lucide-react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/navbar";
 import Header from "./components/header/header";
 import Cards from "./components/cards/cards";
@@ -65,6 +66,7 @@ const App = () => {
   };
 
   return (
+    
     <div className="bg-white">
       {isOnline ? (
         loading ? (
