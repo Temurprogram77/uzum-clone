@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   const closeSearch = () => {
-    document.body.style.overflow = '';
+    document.body.style.overflow = "";
     return setSearchModal(false);
   };
   return (
@@ -70,8 +70,25 @@ const Navbar = () => {
           <p>Savat</p>
         </div>
       </div>
-      {modal && <SmsCard onClose={closeModal} />}
-      {searchModal && <SearchModal onClose={closeSearch} searchTerm={searchTerm} setSearchTerm={setSearchTerm} />}
+      {modal && (
+        <SmsCard
+          onClose={closeModal}
+          onSuccess={(cleanedNumber) => {
+            const user = users.find((u) => u.number === cleanedNumber);
+            if (user) {
+              setUserName(user.name);
+            }
+            closeModal();
+          }}
+        />
+      )}
+      {searchModal && (
+        <SearchModal
+          onClose={closeSearch}
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
+        />
+      )}
     </>
   );
 };
