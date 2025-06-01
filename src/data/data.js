@@ -1,16 +1,16 @@
-import { img11, img12, img13, img14 } from "../assets/cardBoxBase";
+  import { img11, img12, img13, img14 } from "../assets/cardBoxBase";
 
-import {
-  img1,
-  img2,
-  img3,
-  img4,
-  img5,
-  img6,
-  img7,
-  img8,
-  img9,
-} from "../assets/image";
+  import {
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8,
+    img9,
+  } from "../assets/image";
 
 import { image1, image2, image3, image4, image5 } from "../assets/slider";
 import {
